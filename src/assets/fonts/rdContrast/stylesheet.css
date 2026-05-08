@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'RD Contrast';
+    src: url('RDContrast-Light.eot');
+    src: url('RDContrast-Light.eot?#iefix') format('embedded-opentype'),
+        url('RDContrast-Light.woff2') format('woff2'),
+        url('RDContrast-Light.woff') format('woff'),
+        url('RDContrast-Light.ttf') format('truetype'),
+        url('RDContrast-Light.svg#RDContrast-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RD Contrast';
+    src: url('RDContrast-Bold.eot');
+    src: url('RDContrast-Bold.eot?#iefix') format('embedded-opentype'),
+        url('RDContrast-Bold.woff2') format('woff2'),
+        url('RDContrast-Bold.woff') format('woff'),
+        url('RDContrast-Bold.ttf') format('truetype'),
+        url('RDContrast-Bold.svg#RDContrast-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RD Contrast';
+    src: url('RDContrast-LightItalic.eot');
+    src: url('RDContrast-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('RDContrast-LightItalic.woff2') format('woff2'),
+        url('RDContrast-LightItalic.woff') format('woff'),
+        url('RDContrast-LightItalic.ttf') format('truetype'),
+        url('RDContrast-LightItalic.svg#RDContrast-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RD Contrast';
+    src: url('RDContrast-BoldItalic.eot');
+    src: url('RDContrast-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('RDContrast-BoldItalic.woff2') format('woff2'),
+        url('RDContrast-BoldItalic.woff') format('woff'),
+        url('RDContrast-BoldItalic.ttf') format('truetype'),
+        url('RDContrast-BoldItalic.svg#RDContrast-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
