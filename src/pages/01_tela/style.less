@@ -1,2 +1,126 @@
 @import '../../less/includes/colors.less';
 @import '../../less/includes/fonts.less';
+
+body {
+    font-family: 'Itau Display';
+    text-wrap: pretty
+}
+
+.mr-full {
+    top: 0 !important;
+    height: auto;
+    overflow: auto;
+}
+
+.bgtotal {
+    width: 100%;
+    filter: grayscale(1);
+    opacity: .1;
+    z-index: -1;
+    position: absolute;
+}
+
+h1 {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+p {
+    font-size: 0.9em;
+}
+
+.sec1 {
+    width: 100%;
+    height: 36em;
+    background-color: #0001;
+    position: relative;
+
+    .img {
+        position: absolute;
+        width: 33em;
+        top: 0.9em;
+        right: 35em;
+    }
+
+    .boxright {
+        position: absolute;
+        width: 25em;
+        top: 9.4em;
+        right: 4.6em;
+
+        h1 {
+            margin: 0 0 .8em;
+            color: #17344D;
+        }
+    }
+}
+
+.sec2 {
+    .boxImg {
+        padding: 4em 0em 3em 5em;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .img {
+            width: 100%;
+            display: block;
+        }
+        .boxText {
+            padding: 0 27.1em 0 4.1em;
+            position: absolute;
+            h2 {
+                margin: 0 0 0.7em;
+                color: #00A26C;
+            }
+            .content {
+                padding: 0.8em;
+                background-color: #E8E8E8;
+                border-radius: 1em;
+                margin: 1em 0 0;
+            }
+        }
+    }
+}
+
+.sec3 {
+    position: relative;
+    height: 36em;
+    display: flex;
+    align-items: center;
+    .img {
+        position: absolute;
+        width: 39em;
+        left: -4em;
+    }
+    .boxText {
+        position: absolute;
+        left: 34.6em;
+        h2 {
+            color: #00A26C;
+            margin: 2.5em 0 0.5em 1.4em;
+        }
+        .flex {
+            display: flex;
+            gap: .5em;
+            .line1,
+            .line2 {
+                width: 3em;
+                height: 0.5em;
+                margin: 0.3em 0 0;
+            }
+            .line1 {
+                background-color: #E33800;
+            }
+            .line2 {
+                background-color: #C9D400;
+            }
+        }
+    }
+}
