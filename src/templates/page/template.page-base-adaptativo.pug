@@ -16,16 +16,9 @@ html.full-iframe.mr-fontsize
 	body(role="application", aria-label="")
 		//- - var acessib_count = 1;
 		block body-before
-		.portrait
 		.mr-full
 			block body
-			//- +efeitosonoro()	
-			//- +help()
-			//- +attention()
-			//- +medal()
-			//- +bag()
-			//- +header()
-			//- +libras-window()
+			
 		block body-after
 	
 	+scriptVendor('eventEmitter.js')
@@ -39,15 +32,15 @@ html.full-iframe.mr-fontsize
 	+scriptScripts('libras.js')
 	
 	+scriptScripts('resize.js')
-	+scriptScripts('portrait.js')
+	//- +scriptScripts('portrait.js')
 	//- +scriptScripts('translate.js')
 	+scriptScripts('animated.js')
 	+scriptScripts('accessibility.js')
 	+scriptScripts('accessibility-tools.js')
-	+scriptScripts('ballon.js') 
-	+scriptScripts('ballonQuiz.js') 
+	//- +scriptScripts('ballon.js') 
+	//- +scriptScripts('ballonQuiz.js') 
 	+scriptScripts('modalSlide.js')
-	+scriptScripts('instrucoes.js')
-	+scriptScripts('game-control.js')
+	//- +scriptScripts('instrucoes.js')
+	//- +scriptScripts('game-control.js')
 	+scriptModule('component.modal.js')
 	block scripts

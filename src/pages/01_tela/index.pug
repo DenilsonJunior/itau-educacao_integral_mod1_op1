@@ -41,6 +41,44 @@ block body
 				.flex
 					.line2
 					p Identificar os principais desafios e as janelas de oportunidade relacionados ao fortalecimento dos Anos Finais do Ensino Fundamental.
-			
+		
+		section.sec4
+			h2 Por que fortalecer os Anos Finais?
+			p Para avançarmos, precisamos olhar de frente para pontos cruciais como:
+			.infoClick
+			.container-accordeon
+				.corpbtn
+					button.accordeon-title(tabindex="1", aria-label="A complexidade da nossa rede:")
+						h3 A complexidade da nossa rede: 
+						.seta-container
+							.img
+					.accordeon-texto
+						p É preciso  aprofundar o que sabemos sobre as necessidades reais dos estudantes, especialmente à luz das contribuições da neurociência sobre essa fase de intensas transformações.
+
+				.corpbtn
+					button.accordeon-title(tabindex="2", aria-label="As especificidades das adolescências:")
+						h3 As especificidades das adolescências:
+						.seta-container
+							.img
+					.accordeon-texto
+						p Aqui fica o texto informativo que aparece ao clicar.
+
+				.corpbtn
+					button.accordeon-title(tabindex="3", aria-label="As desigualdades que persistem:")
+						h3 As desigualdades que persistem:
+						.seta-container
+							.img
+					.accordeon-texto
+						p Aqui fica o texto informativo que aparece ao clicar.
+
+				.corpbtn
+					button.accordeon-title(tabindex="4", aria-label="O alerta do abandono:")
+						h3 O alerta do abandono:
+						.seta-container
+							.img
+					.accordeon-texto
+						p Aqui fica o texto informativo que aparece ao clicar.
+		
 block scripts
 	script(src="script.js")
+	+scriptScripts('componentes/interaction-accordeon/script.js')

@@ -12,26 +12,11 @@ html.mr-fontsize(lang='pt')
 		link(rel='stylesheet', href='app/modules/engine.css')
 		link(rel='stylesheet', href='app/template/index.css')
 	body
-		//- <audio class="audioTrilha" src="app/assets/audio/trilha.mp3" loop="true" status=0></audio>
-		<audio class="audioAvatar" src="app/assets/audio/avatar_trilha.mp3" loop="true" status=0></audio>
-		<audio class="feedpos" src="app/assets/audio/feed-pos.mp3"></audio>
-		<audio class="feedneg" src="app/assets/audio/feed-neg.mp3"></audio>
-		<audio class="poster" src="app/assets/audio/poster.mp3"></audio>
-		<audio class="presente" src="app/assets/audio/presente.mp3"></audio>
-		<audio class="broches" src="app/assets/audio/broches.mp3"></audio>
-		<audio class="feedFinal" src="app/assets/audio/feedFinal.mp3"></audio>
-
-		<audio class="podcast" src="app/assets/audio/podcast.mp3" loop></audio>
-		<audio class="time" src="app/assets/audio/time.mp3" loop></audio>
-		
-
 		main#main
 		.hud
 			block hud
-				.indicadores
-					block indicadores
+				
 		block popups
-		//- include ../hud/hud.cover.pug
 		include ../hud/hud.loader.pug
 		//- vendor
 		script(src='app/vendor/bluebird.min.js')
