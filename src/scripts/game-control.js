@@ -1,14 +1,14 @@
 events.on("ready", function () {
-  controlAudio();
-  controleAvatar();
-  controlHeader();
-  controlMenuScreen();
-  controlCarregamento();
-  controlResetFase();
-  controlPoster();
-  controlModulo();
-  controlPremio();
-  controlPodcast();
+  // controlAudio();
+  // controleAvatar();
+  // controlHeader();
+  // controlMenuScreen();
+  // controlCarregamento();
+  // controlResetFase();
+  // controlPoster();
+  // controlModulo();
+  // controlPremio();
+  // controlPodcast();
 });
 
 function controlAudio() {

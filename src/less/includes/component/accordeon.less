@@ -1,12 +1,55 @@
 .container-accordeon {
     width: 100%;
-    max-width: 600px;
     margin: 0 auto;
 
     .corpbtn {
+        width: 100%;
+
+        .accordeon-title {
+            width: 100%;
+            background-color: #3D8CCD;
+            margin: 0.5em 0 0;
+            border-radius: 3em;
+            padding: 0.2em 1em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            z-index: 1;
+            color: #ffffff;
+            h3 {
+                font-weight: bold;
+            }
+
+            .seta {
+                width: 2em;
+                height: 2em;
+                background-image: url(../assets/img/seta-top.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin-top: .5em;
+            }
+
+            &.is-opened {
+                background-color: #C9D400;
+                color: #17344D;
+                .seta {
+                    background-image: url(../assets/img/seta-bottom.png);
+                    transform: rotate(180deg);
+                    margin: 0 0 0.5em;
+                }
+            }
+        }
 
         .accordeon-texto {
-            // display: none !important;
+            display: none;
+            background-color: #ffffff;
+            padding: 2.5em 1em 1em;
+            margin: -1.5em auto 0;
+            border-radius: 0 0 1em 1em;
+            p {
+                color: #17344D;
+            }
         }
     }
 }

@@ -347,3 +347,11 @@ template {
 [hidden] {
   display: none;
 }
+
+@media (max-width: 600px) {
+
+  html,
+  body {
+    overflow-y: hidden !important;
+  }
+}

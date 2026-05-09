@@ -19,6 +19,12 @@ html.full-iframe.mr-fontsize
 		.mr-full
 			block body
 			
+		.headerBase
+			.headerRef
+				.modulo.wow_left 
+					h1 Módulo 1
+				.logos.wow_down.delay1
+			
 		block body-after
 	
 	+scriptVendor('eventEmitter.js')
@@ -27,20 +33,14 @@ html.full-iframe.mr-fontsize
 	+scriptVendor('slick.min.js')
 	+scriptModule('component.base-page.js')
 	+scriptModule('behavior.adaptative.js')
-
 	+scriptScripts('jquery-ui.js')
 	+scriptScripts('libras.js')
-	
 	+scriptScripts('resize.js')
-	//- +scriptScripts('portrait.js')
-	//- +scriptScripts('translate.js')
 	+scriptScripts('animated.js')
 	+scriptScripts('accessibility.js')
-	+scriptScripts('accessibility-tools.js')
-	//- +scriptScripts('ballon.js') 
-	//- +scriptScripts('ballonQuiz.js') 
+	+scriptScripts('accessibility-tools.js') 
 	+scriptScripts('modalSlide.js')
-	//- +scriptScripts('instrucoes.js')
-	//- +scriptScripts('game-control.js')
 	+scriptModule('component.modal.js')
+	+scriptScripts('componentes/interaction-accordeon/script.js')
+	+scriptScripts('componentes/script-wow/wow.js')
 	block scripts
