@@ -1,7 +1,7 @@
 {
     "builder": "for-engine",
     "dependencies": {
-        "flamboyant-engine": "5.0.4",
+        "flamboyant-engine": "5.0.9",
         "behavior-adaptative": "2.0.1",
         "events-page-base": "1.0.0",
         "component-accordeon": "1.0.0",

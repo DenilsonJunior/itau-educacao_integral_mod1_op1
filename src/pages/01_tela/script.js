@@ -25,4 +25,24 @@ events.on('ready', function () {
     $('.card-container').click(function() {
         $(this).toggleClass('flipped');
     });
+
+    $('.boxMap .btn').click(function() {
+        var $btnClicado = $(this);
+        
+        $btnClicado.removeClass('infinite');
+
+        var match = $btnClicado.attr('class').match(/btn([A-E])/);
+        if (!match) return;
+        
+        var letraAtual = match[1];
+        
+        $('.boxInfos' + letraAtual).removeClass('hide').fadeIn();
+
+        var proximaLetra = String.fromCharCode(letraAtual.charCodeAt(0) + 1);
+        var $proximoBtn = $('.btn' + proximaLetra);
+        
+        if ($proximoBtn.length) {
+            $proximoBtn.removeClass('hide').addClass('pulse').fadeIn();
+        }
+    });
 });

@@ -16,15 +16,13 @@
     "license": "ISC",
     "homepage": "https://learn.zohopublic.com/external/manual/documentação-flamboyant?p=3843fd39c26dbc5df04c1282f2c7e8b52b84f3bde5c37f006151a3a29c9b799e",
     "dependencies": {
-        "animate.css": "^3.7.0",
-        "baseline-browser-mapping": "^2.10.29",
-        "caniuse-lite": "^1.0.30001792",
         "flamboyant-cli": "git+https://gitlab.afferolab.net/learning_solutions/flamboyant/flamboyant-cli.git",
-        "jquery": "^3.3.1",
         "jquery-ui": "^1.13.1",
         "jquery-ui-dist": "^1.13.1",
         "jquery-ui-touch-punch": "^0.2.3",
         "nodegit": "^0.27.0",
+        "animate.css": "^3.7.0",
+        "jquery": "^3.3.1",
         "normalize.css": "^8.0.0"
     },
     "devDependencies": {
