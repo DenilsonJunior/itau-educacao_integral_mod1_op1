@@ -21,4 +21,8 @@ events.on('ready', function () {
             $parent.find('.boxtp' + targetNumber).fadeIn().addClass('active');
         });
     });
+
+    $('.card-container').click(function() {
+        $(this).toggleClass('flipped');
+    });
 });

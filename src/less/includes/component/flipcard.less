@@ -1,0 +1,85 @@
+.boxFlexCard {
+    display: flex;
+    gap: 0.5em;
+    margin: 1em auto 0;
+    width: 91.5%;
+
+    .box {
+        p {
+            color: #17344D;
+            text-align: center;
+            margin-top: .5em;
+            font-weight: bold;
+        }
+    }
+}
+
+.card-container {
+    width: 21em;
+    height: 14.7em;
+    perspective: 1000px;
+    cursor: pointer;
+
+    .card-flipper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        transform-style: preserve-3d; // Mantém os filhos no espaço 3D
+    }
+
+    // Classe que o JS vai inserir
+    &.flipped .card-flipper {
+        transform: rotateY(180deg); // Gira na horizontal
+    }
+
+    .card-front,
+    .card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden; // Esconde a face oposta
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-front {
+        background-color: #ffffff;
+        color: white;
+        border: solid .3em #17344D;
+        .content {
+            .ico {
+                height: 6em;
+            }
+            .giro {
+                height: 2.7em;
+                position: absolute;
+                bottom: 0.3em;
+                left: 9em;
+            }
+        }
+    }
+
+    .card-back {
+        background: #17344D;
+        color: white;
+        transform: rotateY(180deg); // Já começa virado para ser revelado no giro
+        padding: 2em;
+        .content {
+            p {
+                color: #ffffff;
+                font-weight: 300;
+                margin-bottom: 2em;
+            }
+            .giro {
+                height: 2.7em;
+                position: absolute;
+                bottom: 0.3em;
+                left: 9em;
+            }
+        }
+    }
+}
