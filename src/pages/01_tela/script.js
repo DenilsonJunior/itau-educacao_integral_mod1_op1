@@ -1,4 +1,13 @@
 events.on('ready', function () {
+
+    $(".completeScorm").isInViewportComplete({
+      container: $(".mr-full"),
+      call: function () {
+        console.log("complete one-page");
+        scorm.setCompleted();
+      },
+    });
+
     $('.topicos').each(function() {
         var $parent = $(this);
         var $buttons = $parent.find('[class^="tp"]');
