@@ -151,14 +151,14 @@ function closeModal() {
 	// 	$('body').focus();
 	// }, 1000);
 	
-	// if (window.keyToTabActive) {
+	if (window.keyToTabActive) {
 			$("*").each(function() {
 					var tabItem = parseInt($(this).attr('tabindex'));
 					if (tabCurrent == tabItem) {
 							$(this).focus();
 					}
 			});
-	// }
+	}
 
 
 }

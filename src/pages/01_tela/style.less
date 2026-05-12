@@ -334,6 +334,82 @@ section {
     }
 }
 
+.modal1 {
+    background-color: #ffffff;
+
+    .modal-close {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        width: 2em;
+        height: auto;
+        background-image: none !important;
+
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .boxModal {
+        padding: 5em;
+        h2 {
+            color: #0d3c5c;
+            width: 55%;
+        }
+
+        .flex {
+            display: flex;
+            gap: 1em;
+            margin: 2em 0 0;
+
+            .boxBlocks {
+                width: 50%;
+                display: flex;
+                gap: 1em;
+                flex-wrap: wrap;
+
+                .bloco {
+                    width: calc(50% - 1em);
+                    background-color: #0d3c5c;
+                    padding: 1em;
+                    border: .2em solid #000000;
+                    border-radius: 1em;
+                    display: flex;
+                    align-items: center;
+
+                    &.bloco1 {
+                        border: .2em solid #FF746E;
+                    }
+                    &.bloco2 {
+                        border: .2em solid #00A26C;
+                    }
+                    &.bloco3 {
+                        border: .2em solid #EC7000;
+                    }
+                    &.bloco4 {
+                        border: .2em solid #3D8CCD;
+                    }
+   
+                    p {
+                        color: #ffffff;
+                    }
+                }
+            }
+
+            .boxText {
+                width: 50%;
+                p {
+                    color: #0d3c5c;
+                }
+                p + p {
+                    margin: 1em 0 0;
+                }
+            }
+        }
+    }
+}
+
 .sec6 {
     width: 100%;
     height: 36em;
@@ -788,6 +864,7 @@ section {
         width: 100%;
         bottom: -.5em;
         left: 0;
+        z-index: 1;
     }
 }
 
@@ -1013,4 +1090,37 @@ section {
         }
     }
 
+}
+
+.sec20 {
+    padding: 0em 6.9em 4em;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../../assets/img/bg2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .img {
+        width: 100%;
+        display: block;
+        margin: -1em 0 0;
+    }
+
+    h2 {
+        margin: 1em 0 0;
+        text-align: center;
+        color: #0d3c5c;
+    }
+
+    p {
+        margin: 1em 0 0;
+        color: #0d3c5c;
+    }
+
+    .logoFinal {
+        display: block;
+        margin: 3em auto 0;
+        width: 11em;
+
+    }
 }
