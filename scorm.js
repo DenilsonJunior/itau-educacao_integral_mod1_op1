@@ -1,7 +1,7 @@
 module.exports = {
 	version: '1.2',
-	organization: 'Afferolab',
-	title: 'CursoTeste',
+	organization: 'Itaú',
+	title: 'Itaú - Módulo I',
 	language: 'pt-BR',
 	masteryScore: 0,
 	identifier: '00',
