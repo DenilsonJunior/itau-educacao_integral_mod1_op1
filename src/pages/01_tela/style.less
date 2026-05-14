@@ -101,22 +101,38 @@ body {
 h1 {
     font-size: 1.6em;
     font-weight: bold;
+    color: #17344D;
 }
 
 h2 {
     font-size: 1.45em;
     font-weight: bold;
+    color: #17344D;
 }
 
 h3 {
-    font-size: 1em;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #17344D;
 }
 
 p {
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: #17344D;
-    line-height: 1.2em;
-    font-weight: 300;
+}
+
+h1+p,
+h1+ul,
+h2+p,
+h3+p,
+h2+ul,
+p+ul,
+ul+p {
+    margin-top: 1em;
+}
+
+p+p {
+    margin-top: 0.8em;
 }
 
 .infoClick {
@@ -154,7 +170,7 @@ section {
 
     .boxright {
         position: absolute;
-        width: 25em;
+        width: 26em;
         top: 9.4em;
         right: 4.6em;
 
@@ -278,7 +294,7 @@ section {
         }
         p {
             text-align: center;
-            font-size: .8em;
+            // font-size: .8em;
         }
         .content {
             background-color: #ffffff;
@@ -328,7 +344,7 @@ section {
         }
         p {
             text-align: center;
-            font-size: .8em;
+            // font-size: .8em;
             color: #ffffff;
         }
     }
@@ -416,14 +432,19 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    h2{
+        color: #fff;
+    }
+
     .boxText {
         width: 28em;
         position: absolute;
         left: 6.1em;
         color: #ffffff;
-        margin-top: .5em;
+    
         h2 {
-            width: 90%;
+            width: 95%;
         }
         p {
             color: #ffffff;
@@ -443,6 +464,11 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    h2 {
+            color: #fff;
+        }
+
     img.img {
         position: absolute;
         width: 37em;
@@ -520,7 +546,7 @@ section {
             width: 5em;
         }
         p {
-            font-size: .8em;
+            // font-size: .8em;
             color: #ffffff;
         }
         p + p {
@@ -598,7 +624,7 @@ section {
                 color: #17344D;
             }
             .small {
-                font-size: .6em;
+                font-size: .8em;
                 margin: 1em 0 0;
             }
         }
@@ -618,7 +644,7 @@ section {
 }
 
 .sec10 {
-    padding: 1.4em 8.6em;
+    padding: 1.4em 8.6em 3.5em;
     h2 {
         color: #ffffff;
         margin: 0 0 0.5em;
@@ -641,7 +667,7 @@ section {
     background-image: url('../../assets/img/bg2.png');
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 0.7em 8.5em 1.8em;
+    padding: 3em 8.5em;
     h2 {
         margin-bottom: 1em;
         color: #17344D;
@@ -659,11 +685,14 @@ section {
 
 .sec12 {
     width: 100%;
-    height: 36em;
+    height: 37.5em;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1;
+    h2{
+        color: #fff;
+    }
     img.img {
         position: absolute;
         width: 38em;
@@ -711,7 +740,7 @@ section {
     .boxOrange {
         background-color: #E33800;
         position: absolute;
-        bottom: -2.3em;
+        bottom: -3.7em;
         left: 8em;
         width: 47.2em;
         padding: 1.1em 3em;
@@ -719,12 +748,12 @@ section {
         .ico {
             position: absolute;
             left: -2em;
-            top: -2em;
-            width: 5em;
+            top: -1.5em;
+            width: 4.5em;
         }
         p {
             text-align: center;
-            font-size: .8em;
+            // font-size: .8em;
             color: #ffffff;
         }
     }
@@ -778,6 +807,11 @@ section {
         color: #17344D;
         margin: 1em 0 0;
     }
+
+    .accordeon-title h3 {
+        color: #fff;    
+    }
+
     .infoClick {
         display: flex;
         align-items: center;
@@ -804,7 +838,7 @@ section {
 }
 
 .sec15 {
-    padding: 0 0 0.8em;
+    padding: 0 0 2em;
     .detal {
         width: 100%;
         display: block;
@@ -882,7 +916,7 @@ section {
         position: absolute;
         background-color: #17344D;
         padding: 1.5em;
-        width: 45em;
+        width: 48em;
         bottom: 0.7em;
         border-radius: 1em;
         h2 {
@@ -1072,7 +1106,7 @@ section {
                 }
             }
             &.boxInfosE {
-                right: 0.3em;
+                right: -0.4em;
                 top: 4.1em;
                 width: 11.8em;
                 .boxText {
@@ -1093,7 +1127,7 @@ section {
 }
 
 .sec20 {
-    padding: 0em 6.9em 4em;
+    padding: 0em 6.9em;
     display: flex;
     flex-direction: column;
     background-image: url('../../assets/img/bg2.png');
@@ -1122,5 +1156,20 @@ section {
         margin: 3em auto 0;
         width: 11em;
 
+    }
+
+    .rodape {
+        position: relative;
+        width: 200%;
+        height: 10rem;
+        margin-top: 2rem;
+        left: -50%;
+
+        img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 }
