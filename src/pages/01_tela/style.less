@@ -99,25 +99,26 @@ body {
 }
 
 h1 {
-    font-size: 1.6em;
+    font-size: 1.6em;line-height: 1.3;
     font-weight: bold;
     color: #17344D;
 }
 
 h2 {
-    font-size: 1.45em;
+    font-size: 1.45em;line-height: 1.3;
     font-weight: bold;
     color: #17344D;
 }
 
 h3 {
-    font-size: 1.25em;
+    font-size: 1.3em;line-height: 1.3;
     font-weight: bold;
     color: #17344D;
 }
 
 p {
-    font-size: 0.9em;
+    font-size: 1.1em;
+    line-height: 1.3;
     color: #17344D;
 }
 
@@ -132,7 +133,7 @@ ul+p {
 }
 
 p+p {
-    margin-top: 0.8em;
+    margin-top: 1.1em;
 }
 
 .infoClick {
@@ -196,11 +197,14 @@ section {
         align-items: center;
         justify-content: center;
         .img {
-            width: 100%;
+            width: 105%;
             display: block;
         }
+        p {
+            font-size: 1em;
+        }
         .boxText {
-            padding: 0 27.1em 0 4.1em;
+            padding: 0 26em 0 1.5em;
             position: absolute;
             h2 {
                 margin: 0 0 0.7em;
@@ -211,6 +215,9 @@ section {
                 background-color: #E8E8E8;
                 border-radius: 1em;
                 margin: 1em 0 0;
+                p {
+                    font-size: 1em;
+                }
             }
         }
     }
@@ -231,11 +238,11 @@ section {
     }
     .boxText {
         position: absolute;
-        left: 34.6em;
+        left: 31.6em;
         padding: 0 5em 0 0;
         h2 {
             color: #00A26C;
-            margin: 1.5em 0 0.5em 1.4em;
+            margin: 1.5em 0 0.5em 0em;
         }
         .flex {
             display: flex;
@@ -266,7 +273,7 @@ section {
 }
 
 .sec4 {
-    padding: 3.3em 8.8em 8.8em;
+    padding: 3.3em 8.8em 11.8em;
     z-index: 1;
     h2 {
         margin: 0 0 0.5em;
@@ -311,7 +318,7 @@ section {
 }
 
 .sec5 {
-    padding: 5.7em 5.7em 3.9em;
+    padding: 7em 5.7em 7.9em;
     background-color: #ffffff;
     img {
         display: block;
@@ -351,8 +358,6 @@ section {
 }
 
 .modal1 {
-    background-color: #ffffff;
-
     .modal-close {
         position: absolute;
         top: 1em;
@@ -368,7 +373,12 @@ section {
     }
 
     .boxModal {
-        padding: 5em;
+        background-color: #ffffff;
+        padding: 3em;
+        position: relative;
+        max-width: 58em;
+        max-height: 32em;
+        overflow: auto;
         h2 {
             color: #0d3c5c;
             width: 55%;
@@ -428,19 +438,21 @@ section {
 
 .sec6 {
     width: 100%;
-    height: 36em;
+    height: 47em;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 5em 0 0;
 
     h2{
         color: #fff;
     }
 
     .boxText {
-        width: 28em;
+        width: 31em;
         position: absolute;
-        left: 6.1em;
+        top: 6em;
+        left: 4.1em;
         color: #ffffff;
     
         h2 {
@@ -460,7 +472,7 @@ section {
 
 .sec7 {
     width: 100%;
-    height: 35.1em;
+    height: 52em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -472,15 +484,15 @@ section {
     img.img {
         position: absolute;
         width: 37em;
-        left: -7em;
-        top: -3em;
+        left: -9em;
+        top: 5em;
     }
     .boxText {
-        width: 26em;
+        width: 28em;
         position: absolute;
         left: 31.6em;
         color: #ffffff;
-        margin-top: 2em;
+        margin-top: 0;
         h2 {
             width: 90%;
         }
@@ -511,19 +523,37 @@ section {
                     margin: 0;
                 }
             }
+            .link {
+                display: block;
+                width: 100%;
+                margin-top: 1em;
+                img {
+                    width: 100%;
+                    display: block;
+                }
+            }
         }
     }
 }
 
 .sec8 {
     background-color: #ffffff;
-    padding: 2.5em 7.3em 8.5em;
+    padding: 2.5em 7.3em 13em;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     h2 {
         color: #17344D;
+    }
+    .w100 {
+        width: 100%;
+        &.mt2 {
+            margin-top: 2em;
+        }
+        &.small {
+            font-size: .8em;
+        }
     }
     .img {
         display: block;
@@ -685,7 +715,7 @@ section {
 
 .sec12 {
     width: 100%;
-    height: 37.5em;
+    height: 44.5em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -700,9 +730,9 @@ section {
         top: 2em;
     }
     .boxText {
-        width: 26em;
+        width: 28em;
         position: absolute;
-        left: 7.8em;
+        left: 5em;
         color: #ffffff;
         margin-top: 0em;
         h2 {
@@ -936,12 +966,13 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 36em;
+    height: 37em;
     background-color: #ffffff;
+    padding-bottom: 8em;
     .boxText {
         position: absolute;
-        left: 7em;
-        width: 22.5em;
+        left: 4em;
+        width: 28.5em;
         .bgOrange {
             background-color: #E33800;
             padding: 1em;
@@ -958,7 +989,7 @@ section {
     .img {
         position: absolute;
         right: 1.6em;
-        top: 2em;
+        // top: 2em;
         width: 28em;
     }
     .infoOrange {
@@ -975,9 +1006,9 @@ section {
 }
 
 .sec19 {
-    padding: 1em 3em;
+    padding: 3em;
     background-color: #ffffff;
-    height: 42em;
+    height: 47em;
 
     h2 {
         color: #17344D;
@@ -1050,6 +1081,7 @@ section {
                 position: absolute;
                 p {
                     position: relative;
+                    font-size: .8em;
                 }
                 p + p {
                     margin: 1em 0 0;
@@ -1140,7 +1172,7 @@ section {
         margin: -1em 0 0;
     }
 
-    h2 {
+    h1 {
         margin: 1em 0 0;
         text-align: center;
         color: #0d3c5c;
@@ -1149,6 +1181,7 @@ section {
     p {
         margin: 1em 0 0;
         color: #0d3c5c;
+        text-align: center;
     }
 
     .logoFinal {
